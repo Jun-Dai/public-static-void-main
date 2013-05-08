@@ -1,4 +1,5 @@
-== Instructions ==
+Instructions
+============
 
 * Download this application.
 * Create a git branch with your name in it.
