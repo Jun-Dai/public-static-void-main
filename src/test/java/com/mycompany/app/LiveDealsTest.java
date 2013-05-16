@@ -68,7 +68,29 @@ public class LiveDealsTest {
 
         }
         //test has completed successfully as loop has completed without an error being thrown
-        //change to !prevsort... to confirm test is working
+        //change to !prevSort... to confirm test is working
         Assert.assertTrue(prevSortDirection.equals(sortDirection));
+    }
+
+    @Test
+    public void testFilterOnCity() throws IOException {
+        String dealsJson = new DealLoader().loadDealJson();
+        Deals deals = Deals.parseDeals(dealsJson);
+        String filterCity = "Istanbul";
+        List<Deals.SimpleHotel> orderedHotels = deals.getHotelsByCity(filterCity);
+
+
+        // Loop through the orderedHotels and check to see if city matches istanbul
+        for (int i = 0; i < orderedHotels.size(); i++)
+        {
+            //if hotel in the list is not istanbul the test will fail
+            if(!orderedHotels.get(i).city.equals(filterCity))
+            {
+                //this will be false
+                Assert.assertTrue(orderedHotels.get(i).city.equals(filterCity));
+            }
+        }
+
+        Assert.assertTrue(true);
     }
 }
