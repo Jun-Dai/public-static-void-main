@@ -4,8 +4,8 @@ Instructions
 * Fork this application.
 * Clone it to your local machine.
 * Download IntelliJ (30-day evaluation).
-* Open this application (IntelliJ can open the pom.xml).
-* Run the class App.
+* Open this application (IntelliJ can open the pom.xml as a project).
+* Run the class App (in IntelliJ).
 * Run the tests in `LiveDealsTest`.
 * Finish the test `testDealsAreOrderedByPrice()`.
 * Submit your changes back to GitHub (to your fork).
