@@ -16,4 +16,4 @@ Instructions
 * Add functionality to make the unit test pass.
 * Add the `city` field to the output printed in `App.java`
 * Submit your changes back to GitHub.
-* Submit a pull request from your fork to the my repository.
+* Submit a pull request from your repository to the my repository.
