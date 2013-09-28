@@ -1,7 +1,7 @@
 Instructions
 ============
 
-* Fork this application.
+* Fork this application to your own GitHub account.
 * Clone it to your local machine.
 * Download IntelliJ (30-day evaluation).
 * Open this application (IntelliJ can open the pom.xml as a project).
