@@ -7,8 +7,9 @@ public class DealPrinter {
         StringBuilder sb = new StringBuilder();
 
         List<Deals.SimpleHotel> hotels = deals.getHotels();
+        //List<Deals.SimpleHotel> hotels = deals.getHotelsByCity("Istanbul");
         for (Deals.SimpleHotel hotel : hotels) {
-            sb.append(String.format("%30.30s : $%s\n", hotel.name, hotel.price));
+            sb.append(String.format("%30.30s, %20.20s : $%7.2f\n", hotel.name, hotel.city, hotel.price));
         }
 
         return sb.toString();
